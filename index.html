@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Ivoire Geek School</h1>
+          <p id="description" class="description text-center">
+           Merci d'avoir pris le temps de nous aider à améliorer la plateforme
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nom</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Entrer votre nom"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Entrer votre Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue"></span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Quelle option décrit le mieux votre rôle actuel ?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Sélectionnez le rôle actuel</option>
+              <option value="student">Etudiant</option>
+              <option value="job">Travail à plein temps</option>
+              <option value="learner">Apprenant à temps plein</option>
+              <option value="preferNo">Je préfère ne pas le dire</option>
+              <option value="other">Autres</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Recommanderiez-vous Ivoire Geek School à un ami ?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Absolument</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Peut-etre</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Pas sure</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Quelle est votre module preferé a Ivoire Geek School
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Sélectionnez le rôle actuel</option>
+              <option value="challenges">Developpement Web et Mobile</option>
+              <option value="projects">Data IA</option>
+              <option value="community">Referent digital</option>
+              <option value="openSource">Developpement wordpress</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Que voudriez-vous voir amélioré ?
+              <span class="clue">(Cochez toutes les cases)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Front-end Projects</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Back-end Projects</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Data IA</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />les ressources</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />les veilles</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Des commentaires ou des suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Entrez votre commentaire ici..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Soumettre
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
